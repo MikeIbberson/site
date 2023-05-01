@@ -11,6 +11,11 @@ const SocialIconsTray = styled.div`
     height: 38px;
     margin: 0 0.25rem;
     width: 38px;
+
+    @media (max-width: 567px) {
+      height: 24px;
+      width: 24px;
+    }
   }
 `;
 

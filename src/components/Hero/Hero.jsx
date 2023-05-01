@@ -1,6 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import HeroImage from '../HeroImage';
+import {
+  getThemePropShade,
+  getThemePropPrimary,
+  getThemePropSecondary,
+  getThemePropContrast,
+} from '../Theme/utils';
+import useScroller from '../useScroller';
 
 const Section = styled.section`
   align-items: center;
@@ -26,27 +34,97 @@ const Section = styled.section`
     margin-right: 1rem;
   }
 
-  @media (max-width: 768px) {
+  svg > g {
+    opacity: 0;
+    transform-origin: center;
+  }
+
+  svg > g:nth-of-type(1) {
+    animation-delay: 100ms !important;
+  }
+
+  svg > g:nth-of-type(2) {
+    animation-delay: 200ms !important;
+  }
+
+  svg > g:nth-of-type(3) {
+    animation-delay: 600ms !important;
+  }
+
+  .button {
+    background-image: linear-gradient(
+      90deg,
+      ${getThemePropSecondary()},
+      ${getThemePropPrimary()}
+    );
+
+    border: 2px solid transparent;
+    border-radius: 22px;
+    color: ${getThemePropContrast()};
+    display: inline-block;
+    font-weight: bold;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    padding: 0 1.5rem;
+    transition: border-color 320ms;
+
+    &:hover,
+    &:focus {
+      border-color: ${getThemePropShade()};
+    }
+  }
+
+  .scroller.inview ~ svg > g {
+    animation: heroshapes 550ms ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  @media (max-width: 767px) {
     div,
     svg {
       width: 100%;
     }
+
+    svg {
+      margin-top: 2rem;
+      max-width: 480px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    svg {
+      margin-top: 4rem;
+      transform: scale(1.3);
+    }
+  }
+
+  @keyframes heroshapes {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 `;
 
-// eslint-disable-next-line
-const Hero = ({ children }) => (
-  <Section>
-    <div>
-      {children}
-      <p>
-        <a href="#">
-          <span>My resume</span>
-        </a>
-      </p>
-    </div>
-    <HeroImage />
-  </Section>
-);
+const Hero = ({ children }) => {
+  const { className, ref } = useScroller();
+
+  return (
+    <Section ref={ref}>
+      <div className={className}>{children}</div>
+      <HeroImage />
+    </Section>
+  );
+};
+
+Hero.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Hero;

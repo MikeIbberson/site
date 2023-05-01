@@ -1,6 +1,6 @@
 ---
 priority: 1
-tags: 'react,nodejs,javascript,mongodb,html5,css3,express,materialui,gatsby,graphql,sass,handlebars,mysql'
+tags: 'react,nodejs,javascript,html5,css3,sass,graphql,mongodb,mysql'
 ---
 
 ### Stack

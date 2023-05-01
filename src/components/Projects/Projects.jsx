@@ -30,6 +30,7 @@ const Projects = () => {
         {...project}
         {...project.frontmatter}
         key={`project-${idx}`}
+        index={idx}
       />
     ),
   );

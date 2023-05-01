@@ -7,11 +7,6 @@ export default styled.article`
   margin-bottom: 4rem;
   justify-content: space-between;
 
-  h2::before,
-  h2::after {
-    display: none;
-  }
-
   h2 {
     font-size: 1.728rem;
     margin-bottom: 0;

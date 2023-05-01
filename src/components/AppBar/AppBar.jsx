@@ -3,6 +3,11 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import AppBarId from '../AppBarId';
 import SocialIcons from '../SocialIcons';
+import {
+  getThemePropShade,
+  getThemePropSecondary,
+  getThemePropPrimary,
+} from '../Theme/utils';
 
 const Banner = styled.header`
   align-items: center;
@@ -10,9 +15,9 @@ const Banner = styled.header`
   border-top: 6px solid;
   border-image: linear-gradient(
       139deg,
-      #c7ffed,
-      #015958,
-      #023535
+      ${getThemePropShade()},
+      ${getThemePropSecondary()},
+      ${getThemePropPrimary()}
     )
     3;
   display: flex;

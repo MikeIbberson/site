@@ -9,6 +9,7 @@ import ContainerWrapperLight from '../components/ContainerWrapperLight';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Skill from '../components/Skill';
+import SkillList from '../components/SkillList';
 import SocialImage from '../components/SocialImage';
 
 export { default as Head } from '../components/HeadAssets';
@@ -49,13 +50,13 @@ const Index = ({ data }) => {
                   __html: skill.html,
                 }}
               />
-              <p>
+              <SkillList>
                 {skill.frontmatter.tags
                   .split(',')
                   .map((tag) => (
                     <Skill key={tag} icon={tag} />
                   ))}
-              </p>
+              </SkillList>
             </Column>
           ))}
         </Container>

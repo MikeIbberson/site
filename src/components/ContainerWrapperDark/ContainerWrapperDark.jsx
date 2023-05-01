@@ -21,6 +21,10 @@ const WrapperDark = styled.div`
   * {
     color: #fff !important;
   }
+
+  .scroller > div > *::after {
+    background-color: #023535;
+  }
 `;
 
 // eslint-disable-next-line

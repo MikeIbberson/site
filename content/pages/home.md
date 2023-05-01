@@ -3,7 +3,7 @@ descripion: 'Portfolio website'
 title: 'Mike Ibberson'
 ---
 
-# Hi, I'm Mike 👋
+# <span class="gradient">Hi, I'm Mike</span> 👋
 
 <p class="leadin">Senior full-stack developer & product owner</p>
 
@@ -15,20 +15,22 @@ measurable differences to those companies. I specialize in
 headless architecture, focusing on performance,
 accessibility and usability.
 
+<a class="button" download href="/resume.pdf">My Résumé</a>
+
 <hr />
 
-## Skills
+## <span>Skills</span>
 
 <p class="leadin">Things you'll find me doing or using</p>
 
 <hr />
 
-## Projects
+## <span>Projects</span>
 
 <p class="leadin">Things I've designed and developed</p>
 
 <hr />
 
-## Interests
+## <span>Interests</span>
 
 <p class="leadin">Things I do when I'm not working</p>

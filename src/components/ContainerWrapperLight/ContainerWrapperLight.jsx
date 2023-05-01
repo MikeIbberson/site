@@ -11,6 +11,10 @@ const WrapperLight = styled.div`
   margin-top: -160px;
   padding-top: calc(160px + 2rem);
   position: 'relative';
+
+  .scroller > div > *::after {
+    background-color: #f6fafd;
+  }
 `;
 
 // eslint-disable-next-line

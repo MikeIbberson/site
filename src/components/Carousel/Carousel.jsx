@@ -12,9 +12,15 @@ const Gallery = styled.div`
   &:has([aria-label='gallery controls']) {
     margin-bottom: 100px;
   }
+
+  @media (max-width: 567px) {
+    height: 320px;
+  }
 `;
 
 const Slide = styled.div`
+  background-color: #f6fafd;
+  border-radius: 8px;
   height: 100%;
   width: 100%;
 
@@ -25,6 +31,10 @@ const Slide = styled.div`
     object-fit: cover;
     padding: 0;
     width: 100%;
+
+    @media (max-width: 567px) {
+      object-fit: contain;
+    }
   }
 `;
 

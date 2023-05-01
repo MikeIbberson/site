@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-const Article = styled.article`
+const Article = styled.article.attrs({
+  className: 'column',
+})`
   background-color: #fff;
   border-radius: 8px;
   box-sizing: border-box;
