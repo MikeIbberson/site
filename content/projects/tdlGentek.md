@@ -2,10 +2,9 @@
 brand: 'Portal'
 description: 'Custom sales, ordering and marketing platform'
 facts:
+  - Dynamic sales engine
   - 3CX, Grandstream, Bambora, Purolator, Sage and Mailchimp
     integrations
-  - Dynamic sales engine (discounting, rebating and claiming
-    back)
   - SKU automation
   - Barcode generation
   - Reseller API infrastructure

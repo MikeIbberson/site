@@ -23,7 +23,7 @@ const Aside = styled.aside`
     & li {
       display: flex;
       &::before {
-        content: '🗸';
+        content: '☑️';
         color: #015958;
         margin-right: 2rem;
       }

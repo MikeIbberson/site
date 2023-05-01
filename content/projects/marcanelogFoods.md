@@ -6,7 +6,7 @@ facts:
   - AODA compliant (AA)
   - Multilingual
 gallery:
-  - marc-home.png,Screenshot of hompage layout
+  - marc-home.jpeg,Screenshot of hompage layout
   - marc-recipe.png,Screenshot of recipe page
   - marc-product.png,Screenshot of product page
 slug: 'marcangelo'
