@@ -1,7 +1,6 @@
 import React from 'react';
 import { map, size } from 'lodash';
 import styled from 'styled-components';
-import { StaticImage } from 'gatsby-plugin-image';
 
 const Gallery = styled.div`
   margin: 0;
@@ -87,7 +86,7 @@ const Carousel = ({ data }) => {
           key={item.src}
           role="group"
         >
-          <StaticImage src={`/${item.src}`} alt="" />
+          <img src={`/${item.src}`} alt="" />
         </Slide>
       ))}
       {data.length > 1 && (
