@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { size } from 'lodash';
 
-const Aside = styled.aside`
+const Aside = styled.section`
   background-color: rgb(199, 255, 237);
   border-radius: 8px;
   padding: 2rem;

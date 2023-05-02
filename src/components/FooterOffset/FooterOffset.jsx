@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Element = styled.main`
+const Element = styled.div`
   background: #fff;
   position: relative;
   z-index: 1;

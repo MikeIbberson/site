@@ -108,7 +108,7 @@ const SocialImageStrava = () => (
             x="0"
             y="0"
             width="1613"
-            xlinkHref="/mountain.jpg"
+            xlinkHref="/mountain.webp"
             id="ed1a91ba52"
             height="1210"
             preserveAspectRatio="xMidYMid meet"

@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import {
+  SkipNavLink,
+  SkipNavContent,
+} from '@reach/skip-nav';
 import AppBarId from '../AppBarId';
 import SocialIcons from '../SocialIcons';
 import {
@@ -29,12 +33,16 @@ const Banner = styled.header`
 `;
 
 const AppBar = () => (
-  <Banner role="banner">
-    <Link to="/">
-      <AppBarId>Mike Ibberson</AppBarId>
-    </Link>
-    <SocialIcons />
-  </Banner>
+  <>
+    <SkipNavLink />
+    <Banner role="banner">
+      <Link to="/">
+        <AppBarId>Mike Ibberson</AppBarId>
+      </Link>
+      <SocialIcons />
+    </Banner>
+    <SkipNavContent />
+  </>
 );
 
 export default AppBar;

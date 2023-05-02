@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { capitalize } from 'lodash';
 
 const ListItem = styled.li`
-  display: list-item;
+  display: flex;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 
   & small {
-    margin-left: 0.25rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.833rem;
+    margin-left: 0.5rem;
   }
 `;
 
@@ -34,7 +37,7 @@ const Skill = ({ icon }) => {
 
   return (
     <ListItem className={`devicon-${icon}-${getVersion()}`}>
-      <small>{renderFriendlyText()}</small>
+      <small>{capitalize(renderFriendlyText())}</small>
     </ListItem>
   );
 };

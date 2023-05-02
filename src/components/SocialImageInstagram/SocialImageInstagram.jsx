@@ -131,7 +131,7 @@ const SocialImageInstagram = () => (
             x="0"
             y="0"
             width="972"
-            xlinkHref="/sundae.jpg"
+            xlinkHref="/sundae.webp"
             height="1215"
             preserveAspectRatio="xMidYMid meet"
           />

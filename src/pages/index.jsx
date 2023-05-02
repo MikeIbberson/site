@@ -29,7 +29,7 @@ const Index = ({ data }) => {
   ] = html.split('<hr />');
 
   return (
-    <>
+    <main>
       <Hero>
         <div
           dangerouslySetInnerHTML={{
@@ -77,8 +77,8 @@ const Index = ({ data }) => {
         />
         {interests.nodes.map(
           ({ frontmatter: { network }, html }) => (
-            <Column>
-              <article key={network}>
+            <Column key={network}>
+              <article>
                 <SocialImage network={network} />
                 <div
                   dangerouslySetInnerHTML={{
@@ -90,7 +90,7 @@ const Index = ({ data }) => {
           ),
         )}
       </Container>
-    </>
+    </main>
   );
 };
 

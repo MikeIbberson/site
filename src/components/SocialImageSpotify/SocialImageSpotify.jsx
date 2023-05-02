@@ -104,7 +104,7 @@ const SocialImageSpotify = () => (
             x="0"
             y="0"
             width="530"
-            xlinkHref="/music.jpg"
+            xlinkHref="/music.webp"
             height="640"
             preserveAspectRatio="xMidYMid meet"
           />

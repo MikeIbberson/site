@@ -50,7 +50,7 @@ const HeroImage = () => (
             x="0"
             y="0"
             width="1825"
-            xlinkHref="/bridge.png"
+            xlinkHref="/bridge.webp"
             height="1374"
             preserveAspectRatio="xMidYMid meet"
           />

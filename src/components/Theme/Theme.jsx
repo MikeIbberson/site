@@ -206,6 +206,25 @@ const GlobalStyle = createGlobalStyle`
         transform: translateY(100%) scale(1, 0);
       }
     }
+  }
+
+   [data-reach-skip-nav-link] {
+      background-color: ${getThemePropContrast()};
+      display: block;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: -1;
+      padding: 1rem;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1rem;
+
+      &:focus {
+        z-index: 2;
+      }
+    }
+ 
 `;
 
 const Theme = ({ children }) => (
