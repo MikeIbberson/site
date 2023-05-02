@@ -10,7 +10,7 @@ const ListItem = styled.li`
 
   & small {
     font-family: 'Lato', sans-serif;
-    font-size: 0.833rem;
+    font-size: 1rem;
     margin-left: 0.5rem;
   }
 `;
