@@ -31,10 +31,6 @@ const Slide = styled.div`
     object-fit: cover;
     padding: 0;
     width: 100%;
-
-    @media (max-width: 567px) {
-      object-fit: contain;
-    }
   }
 `;
 
@@ -59,7 +55,7 @@ const Thumbnail = styled.button`
   width: 65px;
 
   &[aria-current='true'] {
-    filter: brightness(120%) !important;
+    filter: brightness(160%) !important;
   }
 
   &:hover {

@@ -5,7 +5,7 @@ facts:
   - Integrated with DocuSign
   - Excel conversion project
 gallery:
-  - pana-login.png,Screenshot of the public login page
+  - panasonic-login.webp,Login page
 slug: 'panasonic'
 title: 'Panasonic'
 priority: 5

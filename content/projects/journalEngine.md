@@ -9,7 +9,9 @@ facts:
   - Multi-tenancy
   - Component-driven, MERN stack
 gallery:
-  - je-dash.png,Screenshot of testing dashboard
+  - je-mobile-feed.webp,Mobile journal feed
+  - je-dashboard.webp,Administrator dashboard
+  - je-course-admin.webp,Course administration
 priority: 3
 slug: 'je'
 title: 'JournalEngine'

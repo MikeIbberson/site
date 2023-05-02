@@ -10,10 +10,9 @@ facts:
   - Reseller API infrastructure
   - MERN stack
 gallery:
-  - tdl-order.png,Screenshot of a test order
-  - tdl-company.png,Screenshot of a test company
-  - tdl-product.png,Screenshot of a product from the company
-    website
+  - tdl-gentek-dashboard.webp,Dashboard
+  - tdl-gentek-order.webp,Order form
+  - tdl-gentek-product.webp,Reseller website
 priority: 2
 slug: 'tdl'
 title: 'Gentek'

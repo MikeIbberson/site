@@ -10,9 +10,8 @@ facts:
   - Multilingual
   - JAMstack
 gallery:
-  - century-home.png,Screenshot of homepage
-  - century-orders.png,Screenshot of orders module in dark
-    mode
+  - century-homepage.webp,Homepage
+  - century-orders.webp,Orders list
 priority: 4
 slug: 'century'
 title: 'Century'
