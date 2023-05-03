@@ -23,7 +23,7 @@ const Aside = styled.section`
     & li {
       display: flex;
       &::before {
-        content: '☑️';
+        content: '\\2713';
         color: #015958;
         margin-right: 2rem;
       }

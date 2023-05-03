@@ -7,6 +7,7 @@ const AppBarId = styled.span`
   letter-spacing: -2px;
   line-height: 0.75;
   margin: 0;
+  text-decoration: none;
 
   background-image: linear-gradient(
     45deg,

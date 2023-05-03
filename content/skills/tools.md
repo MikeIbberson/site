@@ -1,9 +1,9 @@
 ---
 priority: 3
-tags: 'markdown,jira,heroku,digitalocean,amazonwebservices,confluence,canva,codepen'
+tags: 'jira,heroku,amazonwebservices,canva,codepen,digitalocean,confluence'
 ---
 
 ### Tools
 
-Having managed clients and developers, I've worked with
-sundry tools and vendors for shipping better products.
+Having managed clients and developers, I've used many tools
+and vendors to ship better products.

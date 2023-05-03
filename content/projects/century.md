@@ -1,8 +1,6 @@
 ---
 brand: 'Storefront'
-description:
-  'Custom e-commerce layer for Contentful Content Management
-  System (CMS)'
+description: 'Custom e-commerce layer for Contentful'
 facts:
   - AODA compliant (AA)
   - Excel inventory management

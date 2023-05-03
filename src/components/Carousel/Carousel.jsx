@@ -4,18 +4,9 @@ import styled from 'styled-components';
 
 const Gallery = styled.div`
   margin: 0;
-  margin-bottom: 1rem;
-  position: relative;
+  position: relative;px
   height: 650px;
   width: 100%;
-
-  &:has([aria-label='gallery controls']) {
-    margin-bottom: 100px;
-  }
-
-  @media (max-width: 567px) {
-    height: 320px;
-  }
 `;
 
 const Slide = styled.div`
@@ -66,7 +57,10 @@ const Thumbnail = styled.button`
 const Carousel = ({ data }) => {
   const [state, setState] = React.useState(0);
 
-  if (!size(data)) return null;
+  const numberOfSlides = size(data);
+  const shouldShowThumbnails = numberOfSlides > 1;
+
+  if (!numberOfSlides) return null;
 
   return (
     <Gallery
@@ -85,7 +79,7 @@ const Carousel = ({ data }) => {
           <img src={`/${item.src}`} alt="" />
         </Slide>
       ))}
-      {data.length > 1 && (
+      {shouldShowThumbnails && (
         <ThumbnailContainer
           role="group"
           aria-label="gallery controls"

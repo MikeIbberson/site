@@ -19,7 +19,7 @@ export default styled.aside`
     text-decoration: underline;
   }
 
-  @media (max-width: 967px) {
+  @media (max-width: 1187px) {
     display: flex;
     flex-wrap: wrap;
     padding: 0 2rem;

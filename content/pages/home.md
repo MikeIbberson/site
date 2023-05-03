@@ -5,7 +5,7 @@ title: 'Mike Ibberson'
 
 # <span class="gradient">Hi, I'm Mike</span> 👋
 
-<p class="leadin">Senior full-stack developer & product owner</p>
+<p class="leadin">Senior developer / product owner</p>
 
 I've worked as a MERN (Mongo, Express, React, Node)
 developer for more than 10 years. For small business and
@@ -15,7 +15,8 @@ measurable differences to those companies. I specialize in
 headless architecture, focusing on performance,
 accessibility and usability.
 
-<a class="button" download href="/resume.pdf">My Résumé</a>
+<a class="button" download href="/resume.pdf">Download
+resume</a>
 
 <hr />
 

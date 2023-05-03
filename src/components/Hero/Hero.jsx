@@ -58,7 +58,7 @@ const Section = styled.section`
       ${getThemePropPrimary()}
     );
 
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     border-radius: 22px;
     color: ${getThemePropContrast()};
     display: inline-block;
@@ -71,6 +71,7 @@ const Section = styled.section`
 
     &:hover,
     &:focus {
+      outline: 0;
       border-color: ${getThemePropShade()};
     }
   }

@@ -51,6 +51,11 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-size: 2.986rem;
+    white-space: nowrap;
+
+    & ~ .leadin {
+      font-weight: bold;
+    }
   }
 
   h2 {
@@ -120,6 +125,12 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  @media (max-width: 1187px) {
+     .leadin {
+       font-size: 1.2rem;
+    }
+  }
+
   @media (max-width: 992px) {
     body, html {
       font-size: 16px;
@@ -156,7 +167,6 @@ const GlobalStyle = createGlobalStyle`
       margin-bottom: 0.5rem;
     }
   }
-
 
   .scroller > div > * {
     opacity: 0;
