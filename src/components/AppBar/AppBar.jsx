@@ -6,7 +6,6 @@ import {
   SkipNavContent,
 } from '@reach/skip-nav';
 import AppBarId from '../AppBarId';
-import DarkMode from '../DarkMode';
 import SocialIcons from '../SocialIcons';
 import {
   getThemePropShade,
@@ -32,11 +31,6 @@ const Banner = styled.header`
   z-index: 1;
 `;
 
-const Tray = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
 const AppBar = () => (
   <>
     <SkipNavLink />
@@ -44,10 +38,7 @@ const AppBar = () => (
       <Link to="/">
         <AppBarId>Mike Ibberson</AppBarId>
       </Link>
-      <Tray>
-        <DarkMode />
-        <SocialIcons />
-      </Tray>
+      <SocialIcons />
     </Banner>
     <SkipNavContent />
   </>

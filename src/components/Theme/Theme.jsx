@@ -13,7 +13,7 @@ import useDarkMode from '../useDarkMode';
 
 const themeDefs = {
   dark: {
-    contrast: '#012121',
+    contrast: '#001a1a',
     contrastText: '#FFF',
     primary: '#0d9391',
     muted: '#002424',

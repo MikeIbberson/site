@@ -5,9 +5,15 @@ import { ThemeContrast } from '../Theme/Theme';
 const DarkModeButton = styled.button`
   background-color: transparent;
   border: 0;
-  font-size: 1.2rem;
   cursor: pointer;
   border-radius: 500px;
+  font-size: 28px;
+  line-height: 38px;
+
+  @media (max-width: 567px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 `;
 
 const DarkMode = () => {
@@ -20,7 +26,7 @@ const DarkMode = () => {
       title="change contrast"
       type="button"
     >
-      {type === 'light' ? '🌙' : '☀️'}
+      {type === 'light' ? '🌚' : '🌞'}
     </DarkModeButton>
   );
 };

@@ -21,9 +21,10 @@ const HeadAssets = () => [
     rel="preconnect"
   />,
   <link
-    {...useDeferredCss()}
+    //   {...useDeferredCss()}
     href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Lato:wght@300&display=swap"
     key="lato"
+    rel="stylesheet"
   />,
   <link
     {...useDeferredCss()}

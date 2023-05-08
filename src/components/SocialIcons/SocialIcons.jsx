@@ -3,11 +3,15 @@ import styled from 'styled-components';
 import SocialIconGitHub from '../SocialIconGitHub';
 import SocialIconLinkedIn from '../SocialIconLinkedIn';
 import SocialIconOutlook from '../SocialIconOutlook';
+import DarkMode from '../DarkMode';
 
 const SocialIconsTray = styled.div`
   display: flex;
+  justify-content: space-evenly;
 
-  svg {
+  button,
+  svg,
+  a {
     height: 38px;
     margin: 0 0.25rem;
     width: 38px;
@@ -24,6 +28,7 @@ const SocialIcons = () => (
     <SocialIconGitHub />
     <SocialIconLinkedIn />
     <SocialIconOutlook />
+    <DarkMode />
   </SocialIconsTray>
 );
 
