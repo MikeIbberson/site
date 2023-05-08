@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { getThemePropShade } from '../Theme/utils';
@@ -69,5 +70,12 @@ const ProjectsCard = ({
     </Link>
   </Article>
 );
+
+ProjectsCard.propTypes = {
+  brand: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default ProjectsCard;

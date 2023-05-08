@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import useScroller from '../useScroller';
 
@@ -26,6 +27,11 @@ const ContainerHeader = ({ id, html }) => {
       />
     </Header>
   );
+};
+
+ContainerHeader.propTypes = {
+  id: PropTypes.string.isRequired,
+  html: PropTypes.string.isRequired,
 };
 
 export default ContainerHeader;

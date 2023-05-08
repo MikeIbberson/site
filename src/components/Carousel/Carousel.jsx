@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { map, size } from 'lodash';
 import styled from 'styled-components';
 import Image from 'gatsby-image';
@@ -110,6 +111,19 @@ const Carousel = ({ data }) => {
       )}
     </Gallery>
   );
+};
+
+Carousel.defaultProps = {
+  data: [],
+};
+
+Carousel.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string,
+      alt: PropTypes.string,
+    }),
+  ),
 };
 
 export default Carousel;
