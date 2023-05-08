@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { getThemePropPrimary } from '../Theme/utils';
+import {
+  getThemePropPrimary,
+  getThemePropContrast,
+} from '../Theme/utils';
 
 const Shape = styled.svg`
   fill: ${getThemePropPrimary()};
@@ -24,7 +27,7 @@ const WrapperDark = styled.div`
   position: 'relative';
 
   * {
-    color: #fff !important;
+    color: ${getThemePropContrast()} !important;
   }
 
   .scroller > div > *::after {

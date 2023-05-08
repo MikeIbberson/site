@@ -15,7 +15,7 @@ const themeDefs = {
   dark: {
     contrast: '#012121',
     contrastText: '#FFF',
-    primary: '#015958',
+    primary: '#0d9391',
     muted: '#002424',
     shade: '#002424',
     secondary: '#046E6E',

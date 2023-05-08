@@ -51,8 +51,8 @@ const Section = styled.section`
   }
 
   .button {
-    background: ${getThemePropSecondary()};
-    border: 3px solid ${getThemePropSecondary()};
+    background: ${getThemePropPrimary()};
+    border: 3px solid ${getThemePropPrimary()};
     border-radius: 22px;
     color: #fff;
     display: inline-block;
@@ -66,7 +66,7 @@ const Section = styled.section`
     &:hover,
     &:focus {
       outline: 0;
-      background: ${getThemePropPrimary()};
+      background: ${getThemePropSecondary()};
       border-color: ${getThemePropShade()};
     }
   }
