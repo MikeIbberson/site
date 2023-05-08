@@ -2,7 +2,7 @@
 brand: 'Storefront'
 description: 'Custom e-commerce layer for Contentful'
 facts:
-  - AODA compliant (AA)
+  - Accessibility for Ontarians with Disabilities Act
   - Excel inventory management
   - Bambora, Contentful and Mailgun integrations
   - Multilingual
@@ -16,11 +16,12 @@ title: 'Century'
 ---
 
 While at [3merge](https://3merge.ca/), I designed and
-developed an AODA-compliant website for
+developed an AODA-compliant (The Accessibility for Ontarians
+with Disabilities Act) website for
 [Century Welding](https://centurywelding.ca), a
 [Lincoln Electric](https://www.lincolnelectric.com/en)
 brand. Additionally, I created a custom back-office order
-management system, using our homegrown framework, Q3.
+management system, using 3merge's homegrown framework, Q3.
 
 Initially, the client considered implementing WooCommerce;
 however, they liked the [JAMstack](https://jamstack.org/)
@@ -33,8 +34,7 @@ While WooCommerce supports custom theming, the client
 recognized that their shop faced some technical constraints
 that might lend better to something less opinionated and
 headless. One of my deliverables was to audit the final
-product and ensure it met all criteria of _The Accessibility
-for Ontarians with Disabilities Act (AODA)_.
+product and ensure it met all criteria of AODA.
 
 AODA had been particularly challenging because some UI
 patterns the site employed are notoriously tricky to
@@ -55,8 +55,8 @@ an off-the-shelf ecosystem:
 - Flat-rate shipping
 - Inventory alerts
 
-Given that another project I had been working on at the time
-also integrated with Bambora for credit card handling,
+Given that another project I had been working on used
+Bambora for credit card handling,
 [I created a package](https://github.com/MikeIbberson/bambora)
 that configures the hosted webforms in React.
 
@@ -66,7 +66,7 @@ As a Canadian brand, the public site needed to support
 English and French natively. Thankfully, Contentful offers
 the tools to do so baked-in, so I was only tasked with
 making sure the implementation avoided common pitfalls like
-duplicate content and poor navigation.
+duplicate content and disjointed navigation.
 
 ## Excel workbook automation
 

@@ -140,7 +140,7 @@ const SocialImageInstagram = () => (
     </g>
     <g clipPath="url(#b7b98d1d5c)">
       <g clipPath="url(#8a18d44c02)">
-        <g mask="url(#21dd5880e0)">
+        <g>
           <g transform="matrix(0.0925223, 0, 0, 0.0925223, 196.933862, 207.735609)">
             <image
               x="0"

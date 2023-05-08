@@ -7,7 +7,7 @@ const Aside = styled.section`
   background-color: rgb(199, 255, 237);
   border-radius: 8px;
   padding: 2rem;
-  margin: 1rem 0;
+  margin: 1rem 0 0;
 
   & h3 {
     font-size: 1.44rem;
@@ -40,7 +40,7 @@ const Aside = styled.section`
 const Facts = ({ data }) =>
   size(data) ? (
     <Aside>
-      <h3>Highlights:</h3>
+      <h3>Highlights</h3>
       <ul>
         {data.map((item, idx) => (
           <li key={`fact ${idx + 1}`}>{item}</li>

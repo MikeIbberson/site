@@ -24,21 +24,20 @@ framework. It's a heavily integrated system with layers of
 business logic, tied to dozens of modules and user types.
 
 The custom portal, referred to as _OET_, stands in front of
-an on-premise ERP system. Given its age and limitations, the
-client decided to implement all business logic in the
-portal, acting as the "brain" for their ERP's "body". As
-such, except for financial responsibilies, OET truly takes
-care of everything else: from sales to returns to
+an on-premise ERP (Enterprise Resource Planning) system.
+Given its age and limitations, we decided to implement all
+business logic in OET, acting as the "brain" for the ERP's
+"body". As such, except for financial responsibilies, OET
+handles everything else: from sales to returns to
 prospecting to vendor management.
 
 ## Dynamic sales engine
 
 By far the most intense aspect of the portal deals with
-pricing -- both in terms of quoting as well as over-the-top
+pricing—both in terms of quoting as well as over-the-top
 incentives like rebates and claim-backs. It's common for
-some customers to have hundreds of sales rules on their
-profile, some affecting single SKUs and others whole vendor
-catalogues.
+some customers to have hundreds of sales rules, some
+affecting single SKUs and others whole vendor catalogues.
 
 ### Custom pricing
 
@@ -52,13 +51,13 @@ this engine took a trememdous amount of work.
 
 ### Rebates
 
-The instant rebate module inherited much of the same
-functionality of the pricing engine, with additional
-features such as quantity tracking, life time tracking,
-conditions (i.e. must order another product too) and more.
-Unlike some more rudimentary implementions, such as coupons,
-rebating is an advanced feature that works in lockstep with
-a customer's existing custom prices and sales history.
+The instant rebate module inherited much of pricing's
+functionality with additional features such as quantity
+tracking, lifetime tracking, conditions (i.e. must order
+another product) and more. Unlike some more rudimentary
+implementions, such as coupons, rebating is an advanced
+feature that works in lockstep with a customer's existing
+custom prices and sales history.
 
 ### Claim-backs
 
@@ -75,26 +74,24 @@ point-of-sale.
 Connected to OET sits a static e-commerce storefront,
 whereby resellers can quote and order products for their own
 customers. In terms of e-commerce, it's rather
-run-of-the-mill, as most of the product nuances are handled
-API-side.
+run-of-the-mill, as most of the product nuances are
+back-end.
 
 ### Real-time shipping
 
 The system integrates with Purolator's SOAP e-ship API. As I
-couldn't find a decent Node JS implementation of the API,
-[I created an abstraction for it and published to NPM before](https://github.com/MikeIbberson/purolator)
+couldn't find a decent Node JS implementation,
+[I abstracted it and published to NPM before](https://github.com/MikeIbberson/purolator)
 installing on the site for use.
 
 ### Saved carts
 
 Given that TDL Gentek's pricing is highly dynamic, shopping
-carts have expiry dates, so unlike abandoned carts,
-customers are often encouraged to start over if an order's
-idled too long. That said, a sales representive offered
-ushers customers through the sales process, so the OET and
-website often work collaboratively, as a customer adds
-things to their order and the rep modifies them on the
-back-end.
+carts expire, so customers often start over if an order
+idles too long. That said, a sales representive often ushers
+customers through the sales process, using OET and the
+website collaboratively, as the customer adds things to
+their order and the rep modifies them.
 
 ### Product visibility
 
@@ -102,4 +99,6 @@ Some products need to be hidden per customer due to _Do Not
 Sell_ lists provided by vendors. Likewise, if a customer's
 been banned from ordering specific products, admistrators
 need the tools to either hide or disable them from the
-shopping cart.
+shopping cart. I implemented various protocols like this
+that allow for the complete customization of every
+customer's product results.

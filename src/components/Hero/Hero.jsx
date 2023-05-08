@@ -52,13 +52,8 @@ const Section = styled.section`
   }
 
   .button {
-    background-image: linear-gradient(
-      90deg,
-      ${getThemePropSecondary()},
-      ${getThemePropPrimary()}
-    );
-
-    border: 3px solid transparent;
+    background: ${getThemePropSecondary};
+    border: 3px solid ${getThemePropSecondary()};
     border-radius: 22px;
     color: ${getThemePropContrast()};
     display: inline-block;
@@ -67,11 +62,12 @@ const Section = styled.section`
     height: 2.5rem;
     margin-top: 0.5rem;
     padding: 0 1.5rem;
-    transition: border-color 320ms;
+    transition: background, border-color 320ms ease-in;
 
     &:hover,
     &:focus {
       outline: 0;
+      background: ${getThemePropPrimary()};
       border-color: ${getThemePropShade()};
     }
   }

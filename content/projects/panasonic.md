@@ -13,25 +13,24 @@ priority: 5
 
 Back at AltMedia Inc, Panasonic was the first high-profile
 web application I had the chance to collorate on and manage.
-The client came to us with several Excel workbooks that
-their sales teams used, asking us to convert them into a
-self-service portal. This required us to first disect the
-secrets of the workbook and then design a system that could
-(a) satisfy those requirements and (b) cater to users
-unfamiliar with portals and online systems.
+Panasonic came to us with several Excel workbooks that their
+sales team used, asking us to convert them into a
+self-service portal.
+
+I had to first disect the secrets of the workbook and then
+design a system that could satisfy the same requirements and
+cater to users unfamiliar with portals and online systems.
 
 ## Component-driven
 
-The portal serviced three user types, each drastically
-different not just in authorization but also responsibility.
-For this reason, we chose to approach this project with
-components, allowing us to build reusable elements deployed
-over three separate clients, all of which called a central
+The portal serviced three user types, each different in
+authorization and responsibility. Therefore, I chose to
+approach this project with components, allowing me reuse UIs
+across three separate clients, all calling into a central
 REST API.
 
-I worked mostly on these front-end assets, but helped in a
-few key areas of the back-end, such as with its
-integrations.
+I worked mostly on these front-end assets but helped in a
+few key areas of the back-end like its integrations.
 
 ## PDF signing
 

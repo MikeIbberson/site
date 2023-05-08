@@ -1,11 +1,11 @@
 import React from 'react';
 import { map, size } from 'lodash';
 import styled from 'styled-components';
+import Image from 'gatsby-image';
 
 const Gallery = styled.div`
-  margin: 0;
-  position: relative;px
-  height: 650px;
+  margin: 1rem 0 0;
+  position: relative;
   width: 100%;
 `;
 
@@ -14,6 +14,12 @@ const Slide = styled.div`
   border-radius: 8px;
   height: 100%;
   width: 100%;
+
+  .gatsby-image-wrapper {
+    height: 60vw;
+    max-height: 475px;
+    width: 100%;
+  }
 
   & img {
     border-radius: 8px;
@@ -76,7 +82,12 @@ const Carousel = ({ data }) => {
           key={item.src}
           role="group"
         >
-          <img src={`/${item.src}`} alt="" />
+          <Image
+            fluid={{
+              src: `/${item.src}`,
+            }}
+            alt=""
+          />
         </Slide>
       ))}
       {shouldShowThumbnails && (
