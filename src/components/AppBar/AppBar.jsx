@@ -18,6 +18,9 @@ const Banner = styled.header`
   align-items: center;
   background-color: ${getThemePropContrast()};
   border-top: 6px solid;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
   border-image: linear-gradient(
       139deg,
       ${getThemePropShade()},

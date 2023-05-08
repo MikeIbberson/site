@@ -4,20 +4,13 @@ export const DARK = 'dark';
 export const LIGHT = 'light';
 const MODE = 'mode';
 
-const getUserContrastPreference = () => {
+const getUserContrastPreference = () =>
   // SSR
-  if (typeof window === 'undefined') return LIGHT;
-
-  // has been here before
-  const saved = localStorage.getItem(MODE);
-  if (saved) return saved;
-
-  return window.matchMedia &&
-    window.matchMedia('(prefers-color-scheme: dark)')
-      .matches
-    ? DARK
-    : LIGHT;
-};
+  typeof window === 'undefined'
+    ? LIGHT
+    : // not going to look at CSS pref
+      // light mode is admittedly better
+      localStorage.getItem(MODE) || LIGHT;
 
 const useDarkMode = () => {
   const [type, setType] = React.useState(

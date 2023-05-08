@@ -9,6 +9,9 @@ const DarkModeButton = styled.button`
   border-radius: 500px;
   font-size: 28px;
   line-height: 38px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 
   @media (max-width: 567px) {
     font-size: 18px;
@@ -26,7 +29,7 @@ const DarkMode = () => {
       title="change contrast"
       type="button"
     >
-      {type === 'light' ? '🌚' : '🌞'}
+      {type === 'light' ? '🌙' : '☀️'}
     </DarkModeButton>
   );
 };
