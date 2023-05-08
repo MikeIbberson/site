@@ -6,16 +6,18 @@ import {
   SkipNavContent,
 } from '@reach/skip-nav';
 import AppBarId from '../AppBarId';
+import DarkMode from '../DarkMode';
 import SocialIcons from '../SocialIcons';
 import {
   getThemePropShade,
   getThemePropSecondary,
   getThemePropPrimary,
+  getThemePropContrast,
 } from '../Theme/utils';
 
 const Banner = styled.header`
   align-items: center;
-  background-color: #fff;
+  background-color: ${getThemePropContrast()};
   border-top: 6px solid;
   border-image: linear-gradient(
       139deg,
@@ -27,9 +29,12 @@ const Banner = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 0.75rem 1.5rem;
-  position: sticky;
-  top: 0;
   z-index: 1;
+`;
+
+const Tray = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const AppBar = () => (
@@ -39,7 +44,10 @@ const AppBar = () => (
       <Link to="/">
         <AppBarId>Mike Ibberson</AppBarId>
       </Link>
-      <SocialIcons />
+      <Tray>
+        <DarkMode />
+        <SocialIcons />
+      </Tray>
     </Banner>
     <SkipNavContent />
   </>

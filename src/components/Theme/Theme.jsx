@@ -7,20 +7,33 @@ import {
   getThemePropSecondary,
   getThemePropShade,
   getThemePropContrast,
+  getThemePropContrastText,
 } from './utils';
+import useDarkMode from '../useDarkMode';
 
 const themeDefs = {
-  dark: {},
+  dark: {
+    contrast: '#012121',
+    contrastText: '#FFF',
+    primary: '#015958',
+    muted: '#002424',
+    shade: '#002424',
+    secondary: '#046E6E',
+  },
   light: {
-    primary: '#023535',
+    primary: '#023636',
     secondary: '#015958',
     shade: '#c7ffed',
-    contrast: '#fff',
+    contrast: '#FFF',
+    contrastText: '#012121',
+    muted: '#f6fafd',
   },
 };
 
 const GlobalStyle = createGlobalStyle`
   body, html {
+    background-color: ${getThemePropContrast()};
+    color: ${getThemePropContrastText()};
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     margin: 0;
@@ -42,7 +55,11 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    color: ${getThemePropPrimary()};
+    color: ${(props) =>
+      props.theme.contrastText ===
+      themeDefs.light.contrastText
+        ? themeDefs.light.primary
+        : themeDefs.dark.contrastText};
     font-family: 'Karla', sans-serif;
     letter-spacing: -px;
     line-height: 0.85;
@@ -237,12 +254,20 @@ const GlobalStyle = createGlobalStyle`
  
 `;
 
-const Theme = ({ children }) => (
-  <ThemeProvider theme={themeDefs.light}>
-    <GlobalStyle whiteColor />
-    {children}
-  </ThemeProvider>
-);
+export const ThemeContrast = React.createContext();
+
+const Theme = ({ children }) => {
+  const dm = useDarkMode();
+
+  return (
+    <ThemeContrast.Provider value={dm}>
+      <ThemeProvider theme={themeDefs[dm.type]}>
+        <GlobalStyle whiteColor />
+        {children}
+      </ThemeProvider>
+    </ThemeContrast.Provider>
+  );
+};
 
 Theme.propTypes = {
   children: PropTypes.node.isRequired,

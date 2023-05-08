@@ -1,13 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import {
+  getThemePropContrast,
+  getThemePropPrimary,
+  getThemePropShade,
+  getThemePropSecondary,
+} from '../Theme/utils';
 
 const Container = styled.footer`
   background: linear-gradient(
     139deg,
-    #c7ffed,
-    #015958,
-    #023535
+    ${getThemePropShade()},
+    ${getThemePropSecondary()},
+    ${getThemePropPrimary}
   );
+
   color: #fff;
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +52,7 @@ const Offset = styled.div`
 
 const Shape = styled.svg`
   height: 120px;
-  fill: #fff;
+  fill: ${getThemePropContrast()};
   transform: rotate(180deg);
   width: 100%;
 `;

@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { getThemePropContrast } from '../Theme/utils';
 
 const Element = styled.div`
-  background: #fff;
+  background: ${getThemePropContrast()};
   position: relative;
   z-index: 1;
 `;

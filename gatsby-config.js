@@ -28,5 +28,6 @@ module.exports = {
         description: 'Portfolio website',
       },
     },
+    'gatsby-plugin-offline',
   ],
 };

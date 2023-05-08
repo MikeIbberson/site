@@ -1,12 +1,13 @@
 /* eslint-disable react/no-danger,react/prop-types */
 import styled from 'styled-components';
+import { getThemePropMuted } from '../Theme/utils';
 
 export default styled.aside`
   box-sizing: border-box;
   width: 360px;
 
   .project-card {
-    background-color: #f6fafd;
+    background-color: ${getThemePropMuted()};
     margin-left: 0px;
     width: 320px;
   }

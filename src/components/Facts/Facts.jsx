@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { size } from 'lodash';
+import { getThemePropShade } from '../Theme/utils';
 
 const Aside = styled.section`
-  background-color: rgb(199, 255, 237);
+  background-color: ${getThemePropShade()};
   border-radius: 8px;
   padding: 2rem;
   margin: 1rem 0 0;

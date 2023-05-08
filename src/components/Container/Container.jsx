@@ -33,6 +33,7 @@ const ContainerElement = styled.section`
   }
 `;
 
+// eslint-disable-next-line
 const Container = ({ children }) => {
   const { className, ref } = useScroller({
     scrollerClassName: 'section-scroller',
