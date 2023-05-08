@@ -6,7 +6,6 @@ import {
   getThemePropShade,
   getThemePropPrimary,
   getThemePropSecondary,
-  getThemePropContrast,
 } from '../Theme/utils';
 import useScroller from '../useScroller';
 
@@ -52,10 +51,10 @@ const Section = styled.section`
   }
 
   .button {
-    background: ${getThemePropSecondary};
+    background: ${getThemePropSecondary()};
     border: 3px solid ${getThemePropSecondary()};
     border-radius: 22px;
-    color: ${getThemePropContrast()};
+    color: #fff;
     display: inline-block;
     font-weight: bold;
     line-height: 2.5rem;

@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { getThemePropShade } from '../Theme/utils';
+import { getThemePropContrast } from '../Theme/utils';
 
 const Article = styled.article.attrs({
   className: 'column',
 })`
-  background-color: #fff;
+  background-color: ${getThemePropContrast()};
   border-radius: 8px;
   box-sizing: border-box;
   margin: 8px;
