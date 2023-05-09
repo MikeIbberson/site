@@ -7,15 +7,14 @@ title: 'Mike Ibberson'
 
 <p class="leadin">Technical Lead / Senior developer</p>
 
-I've worked as a full stack MERN (Mongo, Express, React,
-Node) developer for more than 10 years. For small business
-and Fortune 500, I've managed the design, development and
-deployment of countless custom applications that have made
-measurable differences to those companies. I specialize in
-headless architecture, focusing on performance,
-accessibility and usability.
+I've worked as a full stack web developer for more than 10
+years. From small business to Fortune 500, I've managed the
+design, development and deployment of countless custom
+applications that have made measurable differences to those
+companies. I specialize in headless architecture, focusing
+on performance, accessibility and usability.
 
-<a class="button" download href="/resume.pdf">Download
+<a class="button" download href="/mike-ibberson-resume.pdf">Download
 resume</a>
 
 <hr />
